@@ -1,0 +1,29 @@
+images:
+  airflow:
+    repository: airflow-clickhouse
+    tag: "1.3"
+    pullPolicy: Never
+
+executor: KubernetesExecutor
+postgresql:
+  enabled: true
+
+webserver:
+  service:
+    type: LoadBalancer  
+
+dags:
+  gitSync:
+    enabled: true
+    repo: https://github.com/sokchivinsann/airflow_k8s.git
+    branch: main
+    rev: HEAD
+    depth: 1
+    maxFailures: 0
+    subPath: dags
+    wait: 60
+
+# logs:
+#   persistence:
+#     enabled: true
+#     size: 10Gi

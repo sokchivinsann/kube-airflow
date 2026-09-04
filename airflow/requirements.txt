@@ -1,0 +1,31 @@
+apache-airflow==3.1.7
+boto3
+botocore
+clickhouse-connect
+clickhouse-driver
+# clickhouse-sqlalchemy
+pyarrow
+dlt
+pandas
+numpy
+python-dotenv
+# findspark
+# sqlalchemy
+apache-airflow-providers-cncf-kubernetes
+# dbt-adapters
+# dbt-clickhouse
+# dbt-common
+# PyYAML==6.0.2
+# dbt-core
+# dbt-extractor
+# dbt-protos
+# dbt-semantic-interfaces
+# requests
+# jinja2
+# sqlparse
+# pyspark=3.5.1
+# apache-sedona==1.7.0
+# geopandas
+# shapely
+# pendulum
+# dbt-osmosis
